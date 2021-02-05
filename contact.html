@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--This did not appear by default with ! tab, Is this needed? -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">    <!--This one caopied from hover.css. 2.2.1 above slides-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">    This one caopied from hover.css. 2.2.1 above slides-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">  <!--Added type-->
     <title>Rosie</title>
 </head>
@@ -25,16 +25,16 @@
                    <div class="col">
                        <ul id="nav" class="list-inline menucontainer">  <!--Font size of 0 so that white spaces are not displayed-->
                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>   <!-- icon hidden from screen readers -->
+                              <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>   <!-- icon hidden from screen readers -->
                            </li>  
                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a> 
+                              <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a> 
                            </li>                         
                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a> 
+                              <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a> 
                            </li>  
                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a> 
+                              <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a> 
                            </li>  
                         </ul>
                    </div> 
@@ -43,8 +43,32 @@
        </div>
 
     </header>
-    <section>
+    <section class="container-fluid">
+       <div class="row bg-color-contact">
+           <div class="col">
+               <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+               <h5 class ="uppercase text-center">Let's work together!</h5>
 
+                <div class="center-form">
+                    <form>
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>   
+                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>                    
+                        <div class="form-row text-center">
+                            <div class="col">
+                               <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                            </div>
+                        </div>
+                        <!-- <input type="submit" value="Submit"> -->
+                    </form>
+
+
+                    
+
+                </div>
+
+           </div>
+       </div> 
 
     </section>
     <footer class="container-fluid">  <!--Full width flexible container-->
@@ -61,7 +85,7 @@
             <p class="inline-block">
                 Need a printable version of my CV? 
                 Download it here.
-                <a href="#" target="_blank" class="cv-pdf">
+                <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
                    <i class="fa fa-download" aria-hidden="true"></i>
                    <span class="sr-only">Download link.</span>  <!--For screen readers only as icon is hidden from screen readers with aria-hidden="true"-->
                 </a>
