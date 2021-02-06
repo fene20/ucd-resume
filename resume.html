@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--This did not appear by default with ! tab, Is this needed? -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">    <!--This one caopied from hover.css. 2.2.1 above slides-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">    This one caopied from hover.css. 2.2.1 above slides-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">  <!--Added type-->
     <title>Rosie</title>
 </head>
@@ -26,16 +26,16 @@
                    <div class="col">
                        <ul id="nav" class="list-inline menucontainer">  <!--Font size of 0 so that white spaces are not displayed-->
                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>   <!-- icon hidden from screen readers -->
+                              <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>   <!-- icon hidden from screen readers -->
                            </li>  
                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a> 
+                              <a href="resume.html" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a> 
                            </li>                         
                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a> 
+                              <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-comment" aria-hidden="true"></i><span>Contact</span></a> 
                            </li>  
                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
-                              <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a> 
+                              <a href="assets/cv/sample-cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a> 
                            </li>  
                         </ul>
                    </div> 
@@ -49,19 +49,37 @@
 
         <section class="container-fluid">
         <div class="row">
-            <div class="col-md-4 bg-color-personal-info section-column"> <!--md-4 1/3 column width-->
+            <div class="col-md-4 bg-color-work-history section-column"> <!--md-4 1/3 column width-->
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="section-heading uppercase">
+                        <h3 class="history-heading uppercase">
                             Work History
                         </h3>
                     </div>
                 </div>
+                <div class="history-items">
+                <div class="timeline-item" data-dates="02/1998 - 4/2004"> <!--custom attribute: data-dates. Hidden initially as seen as an attribute -->
+                    <h4>National College of Art and Design (NCAD)</h4>
+                    <p>Sculptor in residence</p>
+                </div>
+                <div class="timeline-item" data-dates="4/2004 - 6/2008"> <!--custom attribute: data-dates. Hidden initially as seen as an attribute -->
+                    <h4>Fisher and Diaz Funeral Directors</h4>
+                    <p>Junior Embalmer</p>
+                </div>   
+                <div class="timeline-item" data-dates="6/2008 - 6/2011"> <!--custom attribute: data-dates. Hidden initially as seen as an attribute -->
+                    <h4>Phantom Design Inc. Dublin</h4>
+                    <p>Junior Front End Developer</p>
+                </div>                
+                <div class="timeline-item" data-dates="6/2011 - Present"> <!--custom attribute: data-dates. Hidden initially as seen as an attribute -->
+                    <h4>Hooli Inc. Silicon Valley</h4>
+                    <p>Full Stack Web Developer</p>
+                </div> 
+                </div>               
             </div>
             <div class="col-md-8 bg-color-three-reasons section-column"> <!--md-8 remaining 2/3 of column width-->
                 <div class="row">
                     <div class="col">
-                        <h3 class="uppercase">My Skills</h3>
+                        <h3 class="section-heading uppercase">My Skills</h3>
                     </div>
                 </div>
                 <div class="row">
@@ -161,7 +179,7 @@
             <p class="inline-block">
                 Need a printable version of my CV? 
                 Download it here.
-                <a href="#" target="_blank" class="cv-pdf">
+                <a href="assets/cv/sample-cv.pdf" target="_blank" class="cv-pdf">
                    <i class="fa fa-download" aria-hidden="true"></i>
                    <span class="sr-only">Download link.</span>  <!--For screen readers only as icon is hidden from screen readers with aria-hidden="true"-->
                 </a>

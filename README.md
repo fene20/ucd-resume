@@ -1,9 +1,14 @@
 # UCD Resume
 
 6th February 2021
-# 100% of UCD resume training code from the Code Institute.
+# 100% of UCD resume is training code from the Code Institute.
 
-#TBD resume.html. My Skills to Red progress bar are too high.
+5th Feb 2021.
+Hover effect on menu items is no longer working. ? hover, hvr-sweep-to-bottom to be fixed.
+Note: index.html href's were updated just now and copied to both resume.html and contact.html - perhaps related to this.
+Fix for another day. Finished other than that.
+
+
 
 ## Gitpod Reminders
 
